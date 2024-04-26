@@ -5,11 +5,12 @@
 body {
     margin: 0;
     padding: 0;
+    background: rgb(57, 40, 71);
 }
 
 .toolbox-cont {
     height: 5rem;
-    background-color: #4b4b4b;
+    background-color: #4c4c4c;
     display: flex;
     align-items: center;
 }
@@ -84,7 +85,7 @@ body {
 .ticket-cont {
     height: 12rem;
     width: 15rem;
-    background-color: coral;
+    background-color: rgb(175, 179, 182);
 }
 
 .ticket-color {
@@ -92,8 +93,9 @@ body {
 }
 
 .ticket-id {
-    background-color: yellow;
+    background-color: rgb(39, 38, 38);
     height: 2rem;
+    color: white;
 }
 
 .ticket-lock {
@@ -108,7 +110,7 @@ body {
     height: 50vh;
     width: 45vw;
     display: none;
-    background-color: lightsalmon;
+    background-color: lightslategray;
     position: absolute;
     top: 30%;
     left: 27%;
