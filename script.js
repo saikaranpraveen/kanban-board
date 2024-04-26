@@ -49,11 +49,11 @@ toolBoxColors.forEach(function (colorElem) {
 function handleColor(ticket) {
     const ticketColorElem = ticket.querySelector(".ticket-color")
     const id = ticket.querySelector(".ticket-id").innerText;
-    const ticketIdx = getTicketIdx(id);
-
+    
     ticketColorElem.addEventListener("click", () => {
         let currentColor = ticketColorElem.style.backgroundColor;
         let currentColorIdx = colors.findIndex((color) => color === currentColor);
+        const ticketIdx = getTicketIdx(id);
         let newColorIdx = currentColorIdx + 1;
         if (newColorIdx > colors.length - 1) {
             newColorIdx = newColorIdx % colors.length;
