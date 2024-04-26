@@ -59,7 +59,6 @@ function handleColor(ticket) {
             newColorIdx = newColorIdx % colors.length;
         }
         ticketColorElem.style.backgroundColor = colors[newColorIdx];
-        console.log(ticketsArr[ticketIdx])
         ticketsArr[ticketIdx].ticketColor = colors[newColorIdx];
         updateLocalStorage();
     })
